@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffca32;
+  font-family: 'Berkshire Swash', cursive;
+  background: #241441;
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
+.nav-link {
+  color: #ffca32 !important;
+}
+
+.bg-light {
+  background: #241441 !important;
+  background: #0f0c29 !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.hero-background {
+  background-image: url('../images/main.jpg');
+  background-size: cover;
+}
+
+#hero-unit {
+  text-align: center;
+  background-repeat: no-repeat;
+  padding-top: 35px;
+  font-family: 'Poiret One', cursive;
+  margin: 40px auto;
+  border: 10px solid;
+  max-width: 900px;
+  background: #24144196;
+}
+
+#hero-unit::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#hero-text {
+  font-size: 100px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Rouge Script', cursive;
+}
+
+.hero-subtext {
+  font-size: 30px;
+  position: relative;
+    z-index: 1;
+}
+
+#date {
+  font-size: 60px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+#timer {
+  font-size: 60px;
+  position: relative;
+  z-index: 1;
+  height: 150px;
+  width: 570px;
+  margin: 20px auto;
+}
+
+#timer div {
+  float: left;
+  margin: 0 10px;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+#timer span {
+  display: block;
+}
+
+.timer-subtext {
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+#map {
+  height: 350px;
+  width: 70%;
+  margin: 30px auto;
+  border: 10px solid;
+}
+
+#location, #contact, #events, #card {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#address-heading, #contact-heading, .events-heading, .card-heading {
+  font-size: 50px;
+}
+
+#address-text, #contact-text {
+  font-size: 30px;
+}
+
+#copyright {
+  text-align: center;
+  font-family: monospace;
+  margin: 50px 0;
+}
+
+a, a:focus, a:active, a:hover {
+  color: #ffca32;
+}
+
+.swirl-left {
+  display: inline-block;
+  background: url(../images/swirl_left.png) no-repeat left;
+  padding: 0 0 0 140px;
+}
+
+.swirl-right {
+  display: inline-block;
+  background: url(../images/swirl_right.png) no-repeat right;
+  padding: 0 140px 0 0px;
+}
+
+#footer {
+  text-align: center;
+}
+
+.events-block-wrapper {
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+.events-heading {
+  margin-bottom: 50px;
+}
+
+#engagement {
+  margin-right: 20px;
+  float: left;
+}
+
+#reception {
+  float: right;
+}
+
+.events-sub-heading {
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.events-block {
+  border: 5px solid;
+  padding: 50px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/menu.svg);
+}
+
+button:focus {
+  outline: none;
+}
+
+.get-direction {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #timer {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+  }
+  #timer div {
+    width: 15%;
+    height: 60px;
+    flex: 1;
+  }
+  .swirl-left {
+    padding: 0 0 0 100px;
+    background-size: 70px 25px;
+  }
+  .swirl-right {
+    padding: 0 100px 0 0px;
+    background-size: 70px 25px;
+  }
+  #hero-text {
+    font-size: 80px;
+  }
+  #hero-text span {
+    display: block;
+  }
+}
+
+@media (max-width: 750px) {
+  #engagement {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 30px;
+    max-width: 350px;
+  }
+  #reception {
+    float: none;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  #map {
+    width: 100%;
+  }
+}
+
+#mapid { height: 180px; }
