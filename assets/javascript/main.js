@@ -64,7 +64,7 @@
 
 function initMap() {
 
-  var mymap = L.map('map').setView([23.066384, 70.117546], 15);
+  var mymap = L.map('map').setView([23.161910, 75.776902], 15);
 
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 18,
@@ -81,8 +81,8 @@ function initMap() {
     popupAnchor:  [-25, -35] // point from which the popup should open relative to the iconAnchor
 });
 
-  L.marker([23.066384, 70.117546], {icon: greenIcon}).addTo(mymap)
-    .bindPopup("<b>Basma Gardens</b><br />IFFCO Colony, Uday Nagar, Gandhidham.").openPopup();
+  L.marker([23.161910, 75.776902], {icon: greenIcon}).addTo(mymap)
+    .bindPopup("<b>Hotel Park Palace</b><br/>near CHL Appolo Hospital, Hari Phatak, Ring Road, Ujjain (MP)").openPopup();
 
 
 
